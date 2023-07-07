@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="jherreraS6.ActEliminar">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="ACTUALIZAR ELIMINAR"/>
+            <Entry x:Name="txtCodigo" IsReadOnly="True"></Entry>
+            <Entry x:Name="txtNombre" Placeholder="Nombre"></Entry>
+            <Entry x:Name="txtApellido" Placeholder="Apellido"></Entry>
+            <Entry x:Name="txtEdad" Placeholder="Edad"></Entry>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="btnActualizar" Text="Actualizar" Clicked="btnActualizar_Clicked" Grid.Row="0"  Grid.Column="0"></Button>
+                <Button x:Name="btnEliminar" Text="Eliminar" Clicked="btnEliminar_Clicked" Grid.Row="0"  Grid.Column="1"></Button>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
